@@ -1,0 +1,129 @@
+/* -------- RESET -------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f2f2f2; color: #222; }
+
+/* -------- HEADER -------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    align-items: center;
+}
+.header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+.header nav a:hover { color: #0f0; }
+
+/* -------- HERO -------- */
+.hero {
+    background: url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=1600') center/cover;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+.hero h1 { font-size: 3rem; animation: fadeIn 1.5s; }
+.hero p { font-size: 1.3rem; margin: 10px 0 20px; }
+.btn-hero {
+    padding: 12px 25px;
+    background: #0f0;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+.btn-hero:hover { background: #00cc00; }
+
+/* -------- PRODUTOS -------- */
+.produtos-section { padding: 60px 20px; }
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.produto-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #0002;
+    text-align: center;
+    transition: transform .3s;
+    animation: fadeIn .8s;
+}
+.produto-card:hover { transform: scale(1.05); }
+.produto-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.btn-add {
+    margin-top: 10px;
+    width: 100%;
+    background: #007bff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-add:hover { background: #0056b3; }
+
+/* -------- SOBRE -------- */
+.sobre-section {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* -------- MAPA -------- */
+.local-section { text-align: center; padding: 50px 20px; }
+.mapa {
+    width: 90%;
+    height: 350px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* -------- CONTATO -------- */
+.contato-section { padding: 40px 20px; text-align: center; }
+.contato-section a { color: #0066ff; }
+
+/* -------- CARRINHO -------- */
+.carrinho {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0004;
+    display: none;
+    animation: slideUp .5s;
+}
+.btn-finalizar {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+.btn-finalizar:hover { background: #1e7e34; }
+
+/* -------- ANIMAÇÕES -------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}

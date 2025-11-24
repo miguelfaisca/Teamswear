@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teamswear - Camisas de Futebol</title>
+
+<!-- Fonte bonita -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">Teamswear</div>
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Camisas de Futebol Premium</h1>
+    <p>Os melhores mantos dos maiores clubes do mundo!</p>
+    <a href="#produtos" class="btn-hero">Ver Produtos</a>
+</section>
+
+<section id="produtos" class="produtos-section">
+    <h2>Camisas Disponíveis</h2>
+    <div id="lista-produtos" class="produtos-container"></div>
+</section>
+
+<section id="sobre" class="sobre-section">
+    <h2>Sobre a Teamswear</h2>
+    <p>
+        Camisas premium dos maiores clubes do mundo. Qualidade, conforto e estilo para quem vive futebol.
+    </p>
+</section>
+
+<section id="localizacao" class="local-section">
+    <h2>Localização</h2>
+    <p>Centro de Ribeirão Preto</p>
+    <iframe class="mapa" src="https://www.google.com/maps?q=Centro%20de%20Ribeir%C3%A3o%20Preto&output=embed"></iframe>
+</section>
+
+<section id="contato" class="contato-section">
+    <h2>Contato</h2>
+    <p>WhatsApp: <a href="https://wa.me/5516988749041" style="color:#0d47ff;">16 98874-9041</a></p>
+    <p>Email: <a href="mailto:miguelfaisalbr@gmail.com" style="color:#0d47ff;">miguelfaisalbr@gmail.com</a></p>
+</section>
+
+<!-- Carrinho -->
+<div id="carrinho" class="carrinho">
+    <h3>Carrinho</h3>
+    <ul id="carrinho-lista"></ul>
+    <button onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
+</div>
+
+<!-- JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
